@@ -1,6 +1,6 @@
 {
     "version":2,
-    "name":"emergency",
+    "name":"hospital",
     "builds":[
         {
             "src":"App.js",
