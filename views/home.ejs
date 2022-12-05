@@ -5,8 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Victoria Hospital</title>
-  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
-  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
 
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
   <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
@@ -437,7 +435,7 @@
             <div class="space"></div>
             <div id="sendmessage">Your message has been sent. Thank you!</div>
             <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
+            <form  class="contactForm">
               <div class="form-group">
                 <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                 <div class="validation"></div>
@@ -456,7 +454,7 @@
               </div>
 
               <div class="form-action">
-                <button type="submit" class="btn btn-form">Send Message</button>
+                <button type="submit" class="btn btn-form"  onclick="sbt()">Send Message</button>
               </div>
             </form>
           </div>
@@ -496,9 +494,10 @@
             </div>
             <div class="info-sec">
               <ul class="social-icon">
+               <a href="mailto:drashishvivaan9@gmail.com" style="color: white;"><li class="bgred"><i class="fa fa-google-plus"></i></li></a>
                 <li class="bglight-blue"><i class="fa fa-facebook"></i></li>
-                <li class="bgred"><i class="fa fa-google-plus"></i></li>
-                <li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
+                <a href="https://wa.me/%2B447833470816?text=Hello%20I%20am%20___%0AI%20am%20having%20___" style="color: white;"><li class="bgdark-blue"><i class="fa fa-whatsapp"></i></li></a>
+                
                 <li class="bglight-blue"><i class="fa fa-twitter"></i></li>
               </ul>
             </div>
@@ -526,5 +525,11 @@
   <script src="/contactform/contactform.js"></script>
 
 </body>
-
+  <script>
+    function sbt() {
+      console.log(123);
+       alert('Successfully submitted'); 
+       document.location.reload()
+    }
+  </script>
 </html>
